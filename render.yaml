@@ -1,7 +1,6 @@
-
 services:
   - type: web
     name: LmTranslate
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python manage.py runserver 44.225.181.72:$PORT
+    startCommand: gunicorn LM1.wsgi --bind 0.0
