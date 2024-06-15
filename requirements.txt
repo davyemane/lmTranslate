@@ -3,3 +3,5 @@ uvicorn
 python-multipart
 easynmt
 sacremoses
+transformers==4.12.0
+huggingface-hub==0.16.4 
